@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/bitbug_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/prolist.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/delatis.css">
+    <link rel="stylesheet" href="css/aboutOur.css">
+</head>
+<body>
+    <div id="leftBoxs"></div>
+    <div class="headBox">
+        <div class="header">
+            <div class="headRight">
+                <span class="about">关于我们</span>
+                <i class="iconfont icon-thlist"></i>
+            </div>
+        </div>
+    </div>
+    <div class="show">
+        <img class="showimgs" src="img/1481422846.jpg" alt="">
+        <i class="iconfont icon-fangda"></i>
+    </div>
+    <div class="aboutBox">
+        <div class="about_text">
+            <h1>关于我们</h1>
+            <p>互联网+网络科技有限公司拥有资深网络营销研究专家与专业的服务团队，通过自身丰富的网络和社会传媒资源，为广大客户提供精准、高效的网络营销系列服务！</p>
+            <p>互联网+公司秉承诚信合作、创新服务、追求卓越、高效共赢的企业理念；以"拒绝平庸，低效可耻"作为事业口号，站在客户的立场成就每一项合作。</p>
+        </div>
+        <div class="about_ous">
+            <h2>我们能做什么</h2>
+            <p>我们提供的解决方案>></p>
+        </div>
+        <ul class="aboutUls">
+            <li>
+                <div class="about_img">
+                    <img src="img/a1.jpg" alt="">
+                </div>
+                <p><span>01</span>高端定制网站</p>
+            </li>
+            <li>
+                <div class="about_img">
+                    <img src="img/a2.jpg" alt="">
+                </div>
+                <p><span>02</span>移动网站假设</p>
+            </li>
+            <li>
+                <div class="about_img">
+                    <img src="img/a3.jpg" alt="">
+                </div>
+                <p><span>03</span>业务系统研发</p>
+            </li>
+            <li>
+                <div class="about_img">
+                    <img src="img/a4.jpg" alt="">
+                </div>
+                <p><span>04</span>服务器运维</p>
+            </li>
+            <li>
+                <div class="about_img">
+                   <img src="img/14812111.jpg" alt="">
+                </div>
+                <p><span>05</span>APP应用程序</p>
+            </li>
+            <li>
+                <div class="about_img">
+                    <img src="img/a6.jpg" alt="">
+                </div>
+                <p><span>06</span>UI美工设计</p>
+            </li>
+        </ul>
+    </div>
+    
+    <div class="footer">
+        <p>互联网 版权所有 2008-2016 粤ICP备0123456789-1 </p>
+    </div>
+    <i class="iconfont icon-chevron-up"></i>
+</body>
+</html>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/prolist.js"></script>
+<script>
+$(function(){
+    $("#leftBoxs").load("leftBox.html");
+
+
+    
+$(".show")[0].onmouseenter = function(){
+    $(".icon-fangda").css({"display":"block"});
+}
+$(".show")[0].onmouseleave = function(){
+    $(".icon-fangda").css({"display":"none"});
+}
+
+let count = 0;
+$(".icon-fangda")[0].onclick=function(){
+    count++;
+    if(count%2!=0){
+        $(".show").css({"height":"100%"});
+        $(".showimgs").css({"height":"100%"});
+    }else{
+        $(".show").css({"height":"500px"});
+        $(".showimgs").css({"height":"500px"});
+    }
+}
+})
+</script>

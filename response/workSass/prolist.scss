@@ -1,0 +1,192 @@
+body,p,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,td,input,select,option,textarea{
+	margin:0;
+	padding:0;
+}
+body,html{
+    width: 100%;
+    background: #eff2f4;
+}
+body{
+    min-width: 555px!important;
+}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border:none;
+}
+.header{
+    width: 80%;
+    padding: 0 10%;
+    height: 50px;
+    .headLeft{
+        float: left;
+        margin-top: 20px;
+        span{
+            padding: 4px 8px;
+            border-radius: 5px;
+            color: white;
+            margin-left: 10px;
+            background: #2cc0a7;
+        }
+    }
+    .icon-thlist{
+        float: right;
+        line-height: 50px;
+        font-size: 24px;
+        cursor: pointer;
+    }
+    .headRight{
+        width: 200px;
+        margin-top: 8px;
+        float: right;
+        position: relative;
+        input{
+            text-indent: 10px;
+            outline: none;
+            height: 30px;
+        }
+        .icon-icon19{
+            display: block;
+            width: 20px;
+            height: 20px;
+            font-size: 20px;
+            position: absolute;
+            right:47px;
+            top: 4px;
+        }
+    }
+}
+.prolist{
+    width: 88%;
+    margin-top: 30px;
+    margin: 0 auto;
+    .proUls{
+        overflow: hidden;
+        width: 100%;
+        li{
+            width: 320px;
+            height: 277px;
+            background: red;
+            float: left;
+            margin: 20px 1%;
+            .threeUpBox{
+                width: 320px;
+                height: 200px;
+                position: relative;
+                .threeContant_up{
+                    width: 320px;
+                    height: 200px;
+                    img{
+                        width: 320px;
+                        height: 200px;
+                    }
+                }
+                .threeContant_bg{
+                    display: none;
+                    width: 320px;
+                    height: 200px;
+                    background: rgba(0,0,0,0.6);
+                    position: absolute;
+                    top: -200px;
+                    text-align: center;
+                    .icon-jiahao{
+                        display: block;
+                        margin-top: 80px;
+                        font-size: 2rem;
+                        color:rgba($color: #00dfb9, $alpha: 0.8);
+                    }
+                }
+            }
+            .threeDownBox{
+                width: 100%;
+                height: 77px;
+                background: #fff;
+                border-bottom: 3px solid #00dfb9;
+                position: relative;
+                .threeContant_down{
+                    width: 100%;
+                    height: 77px;
+                    .threeTit{
+                        width: 95%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        color: gray;
+                    }
+                    h3{
+                        font-weight: 200;
+                        font-size: 16px;
+                        line-height: 50px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+                .threeContantBg{
+                    display: none;
+                    position: absolute;
+                    top: 100%;
+                    width: 100%;
+                    height: 100%;
+                    background: #00dfb9;
+                    .threeTit{
+                        width: 95%;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                        color: #fff;
+                    }
+                    h3{
+                        font-weight: 200;
+                        font-size: 16px;
+                        line-height: 50px;
+                    }
+                    p{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+.footer{
+    width: 100%;
+    color: white;
+    height: 60px;
+    background: #393939;
+    text-align: center;
+    padding-top: 18px;
+}
+.icon-chevron-up{
+    display: none;
+    position: fixed;
+    right: 4%;
+    bottom: 20%;
+    font-size: 16px;
+    padding: 10px 6px;
+    border-radius: 3px;
+    background: #00dfb9;
+    color: white;
+    z-index: 9999;
+}
+@media screen and (max-width: 1054px){
+	.proUls{
+        overflow: hidden;
+        li{
+            margin: 20px 6%!important;
+        }
+    }
+}
+@media screen and (max-width: 974px){
+	.proUls{
+        overflow: hidden;
+        li{
+            // margin: 0 auto!important;
+            margin: 20px 16%!important;
+        }
+    }
+}

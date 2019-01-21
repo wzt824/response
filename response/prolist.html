@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/bitbug_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/prolist.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+</head>
+<body>
+    <div id="leftBoxs"></div>
+    <div class="header">
+        <div class="headLeft">
+            <span>产品中心</span>
+        </div>
+        <i class="iconfont icon-thlist"></i>
+        <div class="headRight">
+            <input type="text" placeholder="search">
+            <i class="iconfont icon-icon19"></i>
+        </div>
+    </div>
+    <div class="prolist">
+        <ul class="proUls">
+            <li>
+                <div class="threeUpBox">
+                    <div class="threeContant_up">
+                        <img src="img/1481344901.jpg" alt="">
+                    </div>
+                    <div class="threeContant_bg">
+                        <a href="delatis.html">
+                        <i class="iconfont icon-jiahao"></i></a>
+                    </div>
+                </div>
+                <div class="threeDownBox">
+                    <div class="threeContant_down">
+                        <h3 class="threeTit">古典家具公司网站模板</h3>
+                        <p class="threeTit">古典家具, 装饰画, 家居饰品 </p>
+                    </div>
+                    <div class="threeContantBg">
+                        <h3 class="threeTit">古典家具公司网站模板</h3>
+                        <p class="threeTit">古典家具, 装饰画, 家居饰品 </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="threeUpBox">
+                    <div class="threeContant_up">
+                        <img src="img/1481344901.jpg" alt="">
+                    </div>
+                    <div class="threeContant_bg">
+                            <a href="delatis.html">
+                            <i class="iconfont icon-jiahao"></i></a>
+                    </div>
+                </div>
+                <div class="threeDownBox">
+                    <div class="threeContant_down">
+                        <h3 class="threeTit">古典家具公司网站模板</h3>
+                        <p class="threeTit">古典家具, 装饰画, 家居饰品 </p>
+                    </div>
+                    <div class="threeContantBg">
+                        <h3 class="threeTit">古典家具公司网站模板</h3>
+                        <p class="threeTit">古典家具, 装饰画, 家居饰品 </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="threeUpBox">
+                    <div class="threeContant_up">
+                        <img src="img/1481344901.jpg" alt="">
+                    </div>
+                    <div class="threeContant_bg">
+                            <a href="delatis.html">
+                                    <i class="iconfont icon-jiahao"></i></a>
+                    </div>
+                </div>
+                <div class="threeDownBox">
+                    <div class="threeContant_down">
+                        <h3 class="threeTit">古典家具公司网站模板</h3>
+                        <p class="threeTit">古典家具, 装饰画, 家居饰品 </p>
+                    </div>
+                    <div class="threeContantBg">
+                        <h3 class="threeTit">古典家具公司网站模板</h3>
+                        <p class="threeTit">古典家具, 装饰画, 家居饰品 </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="threeUpBox">
+                    <div class="threeContant_up">
+                        <img src="img/1481344901.jpg" alt="">
+                    </div>
+                    <div class="threeContant_bg">
+                            <a href="delatis.html">
+                                    <i class="iconfont icon-jiahao"></i></a>
+                    </div>
+                </div>
+                <div class="threeDownBox">
+                    <div class="threeContant_down">
+                        <h3 class="threeTit">古典家具公司网站模板</h3>
+                        <p class="threeTit">古典家具, 装饰画, 家居饰品 </p>
+                    </div>
+                    <div class="threeContantBg">
+                        <h3 class="threeTit">古典家具公司网站模板</h3>
+                        <p class="threeTit">古典家具, 装饰画, 家居饰品 </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="threeUpBox">
+                    <div class="threeContant_up">
+                        <img src="img/1481344901.jpg" alt="">
+                    </div>
+                    <div class="threeContant_bg">
+                            <a href="delatis.html">
+                               <i class="iconfont icon-jiahao"></i></a>
+                    </div>
+                </div>
+                <div class="threeDownBox">
+                    <div class="threeContant_down">
+                        <h3 class="threeTit">古典家具公司网站模板</h3>
+                        <p class="threeTit">古典家具, 装饰画, 家居饰品 </p>
+                    </div>
+                    <div class="threeContantBg">
+                        <h3 class="threeTit">古典家具公司网站模板</h3>
+                        <p class="threeTit">古典家具, 装饰画, 家居饰品 </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="footer">
+        <p>互联网 版权所有 2008-2016 粤ICP备0123456789-1 </p>
+    </div>
+    <i class="iconfont icon-chevron-up"></i>
+</body>
+</html>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/prolist.js"></script>
+<script>
+$(function(){
+    $("#leftBoxs").load("leftBox.html");
+
+
+    
+    //列表循环效果
+    let proUls = $(".proUls")[0].children;
+    for(let i=0;i<proUls.length;i++){
+        proUls[i].onmouseenter = function(){
+            $(this).find(".threeContant_bg").css({"display":"block"});
+            $(this).find(".threeContantBg").css({"display":"block"});
+            $(this).find(".threeContant_bg").animate({
+                "top":"0"
+            },240);
+            $(this).find(".threeContantBg").animate({
+                "top":"0%"
+            },240);
+        }
+        proUls[i].onmouseleave = function(){
+            $(this).find(".threeContant_bg").css({"display":"none"});
+            $(this).find(".threeContantBg").css({"display":"none"});
+            $(this).find(".threeContant_bg").animate({
+                "top":"-200px"
+            },240);
+            $(this).find(".threeContantBg").animate({
+                "top":"100%"
+            },240);
+        }
+    }
+})
+</script>

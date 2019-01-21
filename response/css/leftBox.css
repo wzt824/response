@@ -1,0 +1,96 @@
+body, p, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, td, input, select, option, textarea {
+  margin: 0;
+  padding: 0; }
+
+body, html {
+  width: 100%;
+  background: #eff2f4; }
+
+body {
+  min-width: 555px !important; }
+
+a {
+  text-decoration: none; }
+
+ul, ol {
+  list-style: none; }
+
+img {
+  border: none; }
+
+.leftBox {
+  position: fixed;
+  width: 240px;
+  height: 100%;
+  top: 0;
+  left: -240px;
+  background: #fff;
+  text-align: center;
+  z-index: 9999999;
+  transition: .5s;
+  overflow: visible !important; }
+  .leftBox .left_boxs {
+    width: 240px;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden; }
+    .leftBox .left_boxs .logoBox {
+      margin: 20px 0; }
+    .leftBox .left_boxs .codeBox p {
+      font-size: 14px; }
+      .leftBox .left_boxs .codeBox p img {
+        margin-bottom: 5px; }
+      .leftBox .left_boxs .codeBox p .tel {
+        width: 11px;
+        height: 16px;
+        display: block;
+        background: red;
+        margin: 0 auto;
+        background: url(../img/tel.jpg); }
+    .leftBox .left_boxs .nav-cut {
+      margin-top: 20px;
+      position: relative;
+      text-align: center;
+      line-height: 36px; }
+      .leftBox .left_boxs .nav-cut .nav_cut_uls li {
+        display: block;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        cursor: pointer; }
+        .leftBox .left_boxs .nav-cut .nav_cut_uls li a {
+          font-size: 14PX;
+          padding: 8px 35px;
+          background: #fff;
+          border-radius: 40px;
+          color: #000; }
+        .leftBox .left_boxs .nav-cut .nav_cut_uls li .navA {
+          color: #fff;
+          background: #00dfb9;
+          transition: .3s; }
+        .leftBox .left_boxs .nav-cut .nav_cut_uls li .navA1 {
+          color: #fff;
+          background: #00dfb9;
+          transition: .3s; }
+    .leftBox .left_boxs .icons i {
+      width: 40px;
+      height: 40px;
+      display: inline-block;
+      background: #00dfb9;
+      color: white;
+      text-align: center;
+      line-height: 40px;
+      margin: 20px 5px 10px;
+      border-radius: 50%; }
+    .leftBox .left_boxs .mianshu {
+      font-size: 14px;
+      margin-top: 5px;
+      margin-bottom: 10px;
+      line-height: 22px; }
+      .leftBox .left_boxs .mianshu a {
+        color: #000; }
+    .leftBox .left_boxs .mianshu:hover a {
+      color: #00dfb9; }
+
+/*# sourceMappingURL=leftBox.css.map */

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/bitbug_favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/prolist.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/delatis.css">
+</head>
+<body>
+    <div id="leftBoxs"></div>
+    <div class="headBox">
+        <div class="header">
+            <div class="headLeft">
+                <span>产品中心详情介绍</span>
+            </div>
+            <i class="iconfont icon-thlist"></i>
+            <div class="headRight">
+                <input type="text" placeholder="search">
+                <i class="iconfont icon-icon19"></i>
+            </div>
+        </div>
+    </div>
+    <div class="show">
+        <img class="showimgs" src="img/1481290045.jpg" alt="">
+        <i class="iconfont icon-fangda"></i>
+    </div>
+    <div class="sec1">
+        <h1>项目介绍</h1>
+        <div class="sec1Top">
+            <div class="secbox">
+                <h2>家居公司，室内设计公司</h2><p>阅读<i></i><span>9518</span>·发布日期<i></i>2016-12-10 08:41:54</p>
+            </div> 
+            <p>室内设计有限公司是中国建筑装饰协会会员单位，揭阳市建筑装饰行业协会家装委员会副主任单位，是首批取得广州家庭装饰装修企业资格证的单位之一。“做品味装饰，创名牌企业”，正以饱满的热情和自信一路前行！<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;黑白颜色的搭配使整个网站显得十分高端儒雅，整体风格简洁大气，以红色作为点缀让画面显得醒目，首页还特别设计了一个视频模块，更加有效的展示公司文化
+            </p>
+        </div>
+        <div class="biaoqian">
+            <p>标签：<i></i><span>高端儒雅</span><span>文化</span><span>视频展示</span></p>
+        </div>
+    </div>
+    <div class="sec2">
+        <h1>详细信息</h1>
+        <div class="img">
+            <img src="img/1469435030299169.png" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <p>互联网 版权所有 2008-2016 粤ICP备0123456789-1 </p>
+    </div>
+    <i class="iconfont icon-chevron-up"></i>
+</body>
+</html>
+<script src="js/jquery-3.1.1.min.js"></script>
+<script src="js/prolist.js"></script>
+<script>
+$(function(){
+    $("#leftBoxs").load("leftBox.html");
+})
+
+$(".show")[0].onmouseenter = function(){
+    $(".icon-fangda").css({"display":"block"});
+}
+$(".show")[0].onmouseleave = function(){
+    $(".icon-fangda").css({"display":"none"});
+}
+
+let count = 0;
+$(".icon-fangda")[0].onclick=function(){
+    count++;
+    if(count%2!=0){
+        $(".show").css({"height":"100%"});
+        $(".showimgs").css({"height":"100%"});
+    }else{
+        $(".show").css({"height":"500px"});
+        $(".showimgs").css({"height":"500px"});
+    }
+}
+</script>

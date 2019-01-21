@@ -1,0 +1,136 @@
+body, p, ul, ol, dl, dd, h1, h2, h3, h4, h5, h6, td, input, select, option, textarea {
+  margin: 0;
+  padding: 0; }
+
+body, html {
+  width: 100%;
+  background: #eff2f4; }
+
+body {
+  min-width: 800px !important; }
+
+a {
+  text-decoration: none; }
+
+ul, ol {
+  list-style: none; }
+
+img {
+  border: none; }
+
+.header .headLeft {
+  margin-top: 7px; }
+  .header .headLeft p {
+    color: #2cc0a7;
+    font-size: 20px; }
+    .header .headLeft p em {
+      display: inline-block;
+      font-style: normal;
+      padding: 8px;
+      font-weight: 600;
+      border-radius: 50%;
+      margin: 0 4px;
+      background: #2cc0a7;
+      color: white; }
+.header .headRight {
+  margin-top: 0px; }
+  .header .headRight .about {
+    display: inline-block;
+    font-size: 20px;
+    color: #2cc0a7;
+    margin: 10px 0 0 60px; }
+  .header .headRight i {
+    color: #2cc0a7; }
+
+.section {
+  width: 92%;
+  margin: 0 auto;
+  overflow: hidden; }
+  .section .newsBox {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 50px; }
+    .section .newsBox .newsLeft {
+      height: 160px;
+      float: left;
+      margin-right: 15px; }
+      .section .newsBox .newsLeft .bg {
+        width: 60px;
+        height: 71px;
+        background: url(../img/bg.png);
+        text-align: center;
+        color: white; }
+        .section .newsBox .newsLeft .bg h4 {
+          font-size: 24px; }
+    .section .newsBox .newsCen {
+      width: 220px;
+      height: 160px;
+      margin-right: 25px;
+      float: left; }
+      .section .newsBox .newsCen img {
+        width: 214px;
+        height: 154px;
+        border: 3px solid white; }
+    .section .newsBox .newsRight {
+      width: 74%;
+      height: 160px;
+      float: left; }
+      .section .newsBox .newsRight h1 {
+        width: 500px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 20px;
+        font-weight: 100;
+        color: #37474f; }
+      .section .newsBox .newsRight .author {
+        color: #888888;
+        font-size: 12px;
+        line-height: 26px; }
+      .section .newsBox .newsRight .news_text {
+        line-height: 25px;
+        text-indent: 28px;
+        font-size: 14px; }
+      .section .newsBox .newsRight .bq {
+        margin-top: 8px;
+        color: #2cc0a7;
+        font-size: 14px; }
+        .section .newsBox .newsRight .bq span {
+          color: #2cc0a7;
+          margin-left: 18px;
+          padding: 5px 8px; }
+
+@media screen and (max-width: 1355px) {
+  .newsLeft {
+    display: none; }
+
+  .newsCen {
+    margin-left: 4%;
+    height: 220px !important; }
+    .newsCen img {
+      width: 214px;
+      height: 206px !important;
+      border: 3px solid white; }
+
+  .newsRight {
+    width: 65% !important;
+    height: 220px !important; } }
+@media screen and (max-width: 895px) {
+  .newsCen {
+    width: 500px !important;
+    margin: 0 15% !important;
+    height: 220px !important; }
+    .newsCen img {
+      width: 500px !important;
+      height: 206px !important;
+      border: 3px solid white; }
+
+  .newsRight {
+    margin: 0 15% !important;
+    width: 77% !important;
+    height: 250px !important; } }
+@media screen and (max-width: 895px) {
+  body {
+    width: 800px !important; } }
+
+/*# sourceMappingURL=news.css.map */
